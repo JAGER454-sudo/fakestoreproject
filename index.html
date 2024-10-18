@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sellout</title>
+     <link rel="stylesheet" href="/style.css">
+</head>
+
+
+     
+<nav >
+    <ul class="sidebar">
+        <img class="closebtn" onclick="closemenu()" height="25px" width="25px" src="/img/close-svgrepo-com.svg" alt="">
+        <li onclick="showcart()" class="cart-page" ><a href="">Cart</a></li>        
+        <li><a href="/jewelery.html">jewelery</a></li> 
+        <li><a href="/clothing.html">Clothing</a></li> 
+        <li><a href="/electronics.html">Electronics</a></li> 
+        
+    </ul>
+  
+    <ul>
+        <li > <a href="/index.html" class="logo"><h1>sellout</h1></a></li>
+        <li class="hideformobile"><a href="/jewelery.html">jewelery</a></li> 
+        <li class="hideformobile"><a href="/clothing.html">Clothing</a></li> 
+        <li class="hideformobile"><a href="/electronics.html">Electronics</a></li> 
+        <li class="menutoggle" onclick="togglebtn()">  <a href="#"><img height="25px" width="25px" src="/img/menu-burger-horizontal-svgrepo-com.svg" alt=""></a></li>
+        <button class="cart"> 🛒<span id="cart-count">0</span></button>
+    </ul>
+</nav>
+
+
+<body>
+   <div class="maincontainer">
+    
+   </div>
+ 
+    
+   <div class="cartmodal">
+    <span  id="close-cart">
+        <img height="25px" width="25px"  src="/img/close-svgrepo-com.svg" alt="close">
+    </span>
+    <h2>Your Cart</h2>
+    <div class="order">
+        <strong class="total">Total:$<span id="total-price">0.00</span></strong> 
+        <button class="checkoutbtn" onclick="checkout()"> Checkout</button>
+    </div>
+    
+    <div id="cart-items"></div>
+   
+    </div>
+
+
+<div class="popupnotif">
+  
+    <div class="notifmodal" id="Modal">
+        <div class="modal-content">
+            
+            <p>added to cart!</p>
+        </div>
+    </div>
+</div>
+
+<div class="checkoutnotif">
+  
+    <div class="notifcheckout" id="myModal">
+        <div class="checkout-content">
+            
+            <p>item ordered!</p>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
